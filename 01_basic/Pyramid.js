@@ -24,9 +24,26 @@
 //     console.log("*" .repeat(i))
 // }
 
-let row = 5
-for(i= 1; i <= row; i++){
-    let space = " " .repeat(r-i)
-    let star = "*" .repeat(2*i + i)
-    console.log(space + star)
+// let row = 5
+// for(i= 1; i <= row; i++){
+//     let space = " " .repeat(row-i)
+//     let star = "*" .repeat(2*i + i)
+//     console.log(space + star)
+// }
+
+// let rows = 5;
+
+function print_pyramid(rows){
+for(i = 1; i <= rows; i++ ){
+    let row = "";
+  for(let j = 1; j <= rows - i; j++){
+    row += " "
+  }
+
+  for(let k = 1; k <= 2 * i - 1; k++){
+    row += "*"
+  }
+  console.log(row)
 }
+}
+print_pyramid(10)
