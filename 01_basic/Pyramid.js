@@ -33,17 +33,44 @@
 
 // let rows = 5;
 
-function print_pyramid(rows){
-for(i = 1; i <= rows; i++ ){
-    let row = "";
-  for(let j = 1; j <= rows - i; j++){
-    row += " "
-  }
+// function print_pyramid(rows){
+// for(i = 1; i <= rows; i++ ){
+//     let row = "";
+//    for(let j = 1; j <= rows - i; j++){
+//      row += " "
+//    }
 
-  for(let k = 1; k <= 2 * i - 1; k++){
-    row += "*"
-  }
-  console.log(row)
+//    for(let k = 1; k <= 2 * i - 1; k++){
+//      row += "*"
+//    }
+//    console.log(row)
+//  }
+// }
+//  print_pyramid(10)
+
+// let Numofrow = 5;
+// for(i = 1; i<= Numofrow; i++){
+//     let row = "";
+//     for(let j = 1; j <= Numofrow - i; j++){
+//         row += " ";
+//     }
+//         for (let k = 1; k <= 2 * i - 1; k++){
+//             row += "*";
+//         } 
+//     console.log(row)
+// }
+
+
+// let numofrow = 5;
+function pattern(numofrow){
+ for(i = 1; i<=numofrow; i++){
+    let row = ""
+    for(j=1; j<= numofrow-i; j++){
+        row += " "}
+    for(k=1; k<= 2*i - 1; k++){
+        row += "*"
+    }
+    console.log(row)
+ }
 }
-}
-print_pyramid(10)
+pattern(10)

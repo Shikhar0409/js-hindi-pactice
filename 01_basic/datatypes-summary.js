@@ -15,3 +15,7 @@
 
 // console.log(typeof (name));
 
+// References data type(non primitive)
+
+// Array : Object : Functions 
+
