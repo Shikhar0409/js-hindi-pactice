@@ -61,16 +61,15 @@
 // }
 
 
-// let numofrow = 5;
-function pattern(numofrow){
+let numofrow = 5;
+// function pattern(numofrow)
  for(i = 1; i<=numofrow; i++){
-    let row = ""
-    for(j=1; j<= numofrow-i; j++){
+    let row = "";
+    for(j=1; j <=  i-1; j++){
         row += " "}
-    for(k=1; k<= 2*i - 1; k++){
+    for(k=1; k<= 2 * (numofrow - i) + 1; k++){
         row += "*"
     }
     console.log(row)
  }
-}
-pattern(10)
+
